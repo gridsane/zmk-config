@@ -20,6 +20,15 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+        mtr: mod_tap_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&kp>;
+        };
     };
     keymap {
         compatible = "zmk,keymap";
@@ -29,7 +38,7 @@
 &kp LWIN  &kp GRAVE  &kp Q  &kp W  &kp E      &kp R             &kp T        &kp Y        &kp U           &kp I      &kp O    &kp P     &kp LBKT       &mt RWIN RBKT
           &kp LCTRL  &kp A  &kp S  &kp D      &kp F             &rpi LGUI G   &rpi RGUI H   &kp J           &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
           &kp LALT   &kp Z  &kp X  &kp C      &kp V             &kp B        &kp N        &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                                   &lt 1 TAB  &mt LSHFT ESCAPE  &lt 2 SPACE  &lt 2 ENTER  &mt RSHFT BSPC  &to 1
+                                   &lt 1 TAB  &mt LSHFT ESCAPE  &lt 2 SPACE  &lt 2 ENTER  &mtr RSHFT BSPC  &to 1
             >;
         };
 
