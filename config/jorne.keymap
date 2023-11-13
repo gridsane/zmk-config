@@ -57,10 +57,10 @@
 
         layer_raise {
             bindings = <
-&trans  &kp KP_NUM       &kp KP_SLASH     &kp KP_N7  &kp KP_N8         &kp KP_N9        &kp KP_MINUS         &kp C_VOL_UP      &kp LG(UP)    &kp C_PLAY_PAUSE  &kp RG(DOWN)   &kp C_NEXT  &none   &trans
-        &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &rpi LCTRL KP_N5  &rpi LALT KP_N6  &rpi LGUI KP_PLUS    &rpi RGUI C_MUTE  &kp LG(LEFT)  &kp UP            &kp RG(RIGHT)  &none       &none
-        &trans           &kp KP_N0        &kp KP_N1  &kp KP_N2         &kp KP_N3        &kp KP_DOT           &kp C_VOL_DN      &kp LEFT      &kp DOWN          &kp RIGHT      &none       &trans
-                                                     &to 3             &trans           &trans               &trans            &trans        &to 3
+&trans  &kp KP_NUM       &kp KP_SLASH     &kp KP_N7  &kp KP_N8         &kp KP_N9        &kp KP_MINUS         &kp C_VOL_UP      &kp LG(UP)           &kp C_PLAY_PAUSE  &kp RG(DOWN)              &kp C_NEXT  &none   &trans
+        &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &rpi LCTRL KP_N5  &rpi LALT KP_N6  &rpi LGUI KP_PLUS    &rpi RGUI C_MUTE  &rpi RCTRL LG(LEFT)  &kp UP            &rpi RIGHT_ALT LG(RIGHT)  &none       &none
+        &trans           &kp KP_N0        &kp KP_N1  &kp KP_N2         &kp KP_N3        &kp KP_EQUAL         &kp C_VOL_DN      &kp LEFT             &kp DOWN          &kp RIGHT                 &none       &trans
+                                                     &to 3             &trans           &trans               &trans            &trans               &to 3
             >;
         };
 
