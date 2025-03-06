@@ -72,5 +72,13 @@
                                                      &trans        &none         &trans          &trans        &none         &trans
             >;
         };
+
+        extra1 {
+            status = "reserved";
+        };
+
+        extra2 {
+            status = "reserved";
+        };
     };
 };
